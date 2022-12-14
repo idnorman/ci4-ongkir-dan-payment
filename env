@@ -144,4 +144,4 @@
 #--------------------------------------------------------------------
 
 rajaongkir.baseURI = 'https://api.rajaongkir.com/starter/'
-rajaongkir.key = 'de134871f7c45886257270489bbb1038'
+rajaongkir.key = 'your-api-key'

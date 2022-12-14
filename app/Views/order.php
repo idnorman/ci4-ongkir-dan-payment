@@ -71,7 +71,7 @@
                             <option value="tiki">TIKI</option>
                         </select>
                         <label for="courier-service" class="form-label">Pilih Layanan</label>
-                        <select class="courier-service form-select form-select-sm" name="courier-service" id="courier-service">
+                        <select class="courier-service form-select form-select-sm" name="courier-service" id="courier-service" disabled="true">
                             <option selected disabled>Pilih Layanan</option>
                         </select>
                     </div>
@@ -150,6 +150,7 @@
             let weight = $('#weight').val();
             let courier = $('#courier').val();
 
+            $('#courier-service').attr('disabled', true);
             await fetch('<?= base_url() . route_to('getCost') ?>', {
                     method: "POST",
                     headers: {
@@ -171,6 +172,7 @@
                     let disabledOption = $("<option></option>").html('Pilih Layanan').attr('disabled', true).attr('selected', true);
                     $('#courier-service').find('option').remove()
                         .end().append(disabledOption).append(options);
+                    $('#courier-service').attr('disabled', false);
                 });
         };
 
