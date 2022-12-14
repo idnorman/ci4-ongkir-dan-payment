@@ -1,0 +1,403 @@
+CRITICAL - 2022-12-11 05:09:04 --> Too few arguments to function App\Controllers\Home::get(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:10:02 --> Too few arguments to function App\Controllers\Home::get(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:10:03 --> Too few arguments to function App\Controllers\Home::get(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:10:03 --> Too few arguments to function App\Controllers\Home::get(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:10:18 --> Too few arguments to function App\Controllers\Home::get(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:10:25 --> Too few arguments to function App\Controllers\Home::get(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:10:51 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:11:22 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:11:48 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:12:15 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:12:16 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:12:16 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:12:29 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and at least 1 expected
+in APPPATH\Controllers\Home.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 05:59:06 --> 6 : Could not resolve host: de134871f7c45886257270489bbb1038
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: de134871f7c45886257270489bbb1038')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://de134871f7c45886257270489bbb1038')
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://de134871f7c45886257270489bbb1038', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:00:21 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:00:38 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:00:39 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:01:14 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:01:15 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:01:15 --> Too few arguments to function App\Controllers\Home::raja(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:01:35 --> CodeIgniter\HTTP\CURLRequest::request(): Argument #2 ($url) must be of type string, null given, called in C:\laragon\www\ongkir-dan-payment\app\Controllers\Home.php on line 27
+in SYSTEMPATH\HTTP\CURLRequest.php on line 128.
+ 1 APPPATH\Controllers\Home.php(27): CodeIgniter\HTTP\CURLRequest->request('GET', null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:01:35 --> CodeIgniter\HTTP\CURLRequest::request(): Argument #2 ($url) must be of type string, null given, called in C:\laragon\www\ongkir-dan-payment\app\Controllers\Home.php on line 27
+in SYSTEMPATH\HTTP\CURLRequest.php on line 128.
+ 1 APPPATH\Controllers\Home.php(27): CodeIgniter\HTTP\CURLRequest->request('GET', null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:01:39 --> CodeIgniter\HTTP\CURLRequest::request(): Argument #2 ($url) must be of type string, null given, called in C:\laragon\www\ongkir-dan-payment\app\Controllers\Home.php on line 27
+in SYSTEMPATH\HTTP\CURLRequest.php on line 128.
+ 1 APPPATH\Controllers\Home.php(27): CodeIgniter\HTTP\CURLRequest->request('GET', null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:01:39 --> CodeIgniter\HTTP\CURLRequest::request(): Argument #2 ($url) must be of type string, null given, called in C:\laragon\www\ongkir-dan-payment\app\Controllers\Home.php on line 27
+in SYSTEMPATH\HTTP\CURLRequest.php on line 128.
+ 1 APPPATH\Controllers\Home.php(27): CodeIgniter\HTTP\CURLRequest->request('GET', null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:01:40 --> CodeIgniter\HTTP\CURLRequest::request(): Argument #2 ($url) must be of type string, null given, called in C:\laragon\www\ongkir-dan-payment\app\Controllers\Home.php on line 27
+in SYSTEMPATH\HTTP\CURLRequest.php on line 128.
+ 1 APPPATH\Controllers\Home.php(27): CodeIgniter\HTTP\CURLRequest->request('GET', null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:02:01 --> CodeIgniter\HTTP\CURLRequest::request(): Argument #2 ($url) must be of type string, null given, called in C:\laragon\www\ongkir-dan-payment\app\Controllers\Home.php on line 28
+in SYSTEMPATH\HTTP\CURLRequest.php on line 128.
+ 1 APPPATH\Controllers\Home.php(28): CodeIgniter\HTTP\CURLRequest->request('GET', null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:10:00 --> 60 : SSL certificate problem: certificate has expired
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('60', 'SSL certificate problem: certificate has expired')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.rajaongkir.com/starter/province')
+ 4 APPPATH\Controllers\Home.php(27): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.rajaongkir.com/starter/province', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:15:48 --> Undefined property: App\Controllers\Home::$rajas
+in APPPATH\Controllers\Home.php on line 22.
+ 1 APPPATH\Controllers\Home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$rajas', 'APPPATH\\Controllers\\Home.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 06:58:20 --> Undefined variable $params
+in APPPATH\Helpers\RajaOngkir.php on line 42.
+ 1 APPPATH\Helpers\RajaOngkir.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $params', 'APPPATH\\Helpers\\RajaOngkir.php', 42)
+ 2 APPPATH\Controllers\Home.php(22): App\Helpers\RajaOngkir->getCity()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 07:22:39 --> 22 : The requested URL returned error: 400
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 400')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://api.rajaongkir.com/starter/cost?0=61&1=10&2=1200&3=jne')
+ 4 APPPATH\Helpers\RajaOngkir.php(25): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://api.rajaongkir.com/starter/cost', [...])
+ 5 APPPATH\Helpers\RajaOngkir.php(48): App\Helpers\RajaOngkir->get('cost', [...])
+ 6 APPPATH\Controllers\Home.php(22): App\Helpers\RajaOngkir->getCost('61', '10', 1200, 'jne')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 07:24:11 --> 22 : The requested URL returned error: 400
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 400')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://api.rajaongkir.com/starter/cost?origin=61&destination=10&weight=1200&courier=jne')
+ 4 APPPATH\Helpers\RajaOngkir.php(25): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://api.rajaongkir.com/starter/cost', [...])
+ 5 APPPATH\Helpers\RajaOngkir.php(48): App\Helpers\RajaOngkir->get('cost', [...])
+ 6 APPPATH\Controllers\Home.php(22): App\Helpers\RajaOngkir->getCost('61', '10', 1200, 'jne')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 07:24:12 --> 22 : The requested URL returned error: 400
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 400')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://api.rajaongkir.com/starter/cost?origin=61&destination=10&weight=1200&courier=jne')
+ 4 APPPATH\Helpers\RajaOngkir.php(25): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://api.rajaongkir.com/starter/cost', [...])
+ 5 APPPATH\Helpers\RajaOngkir.php(48): App\Helpers\RajaOngkir->get('cost', [...])
+ 6 APPPATH\Controllers\Home.php(22): App\Helpers\RajaOngkir->getCost('61', '10', 1200, 'jne')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 07:24:50 --> 22 : The requested URL returned error: 400
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 400')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://api.rajaongkir.com/starter/cost?origin=61&destination=10&weight=1200&courier=jne')
+ 4 APPPATH\Helpers\RajaOngkir.php(25): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://api.rajaongkir.com/starter/cost', [...])
+ 5 APPPATH\Helpers\RajaOngkir.php(48): App\Helpers\RajaOngkir->get('cost', [...])
+ 6 APPPATH\Controllers\Home.php(22): App\Helpers\RajaOngkir->getCost(61, 10, 1200, 'jne')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 07:24:52 --> 22 : The requested URL returned error: 400
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 400')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://api.rajaongkir.com/starter/cost?origin=61&destination=10&weight=1200&courier=jne')
+ 4 APPPATH\Helpers\RajaOngkir.php(25): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://api.rajaongkir.com/starter/cost', [...])
+ 5 APPPATH\Helpers\RajaOngkir.php(48): App\Helpers\RajaOngkir->get('cost', [...])
+ 6 APPPATH\Controllers\Home.php(22): App\Helpers\RajaOngkir->getCost(61, 10, 1200, 'jne')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->raja()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 19:20:37 --> Attempt to read property "json" on string
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "json" on string', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 19:21:24 --> Attempt to read property "results" on string
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "results" on string', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 19:21:51 --> Attempt to read property "rajaongkir" on string
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "rajaongkir" on string', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 19:22:07 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Home.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 19:23:19 --> Attempt to read property "rajaongkir" on string
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "rajaongkir" on string', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 19:23:29 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Home.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 19:24:12 --> Attempt to read property "results" on string
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "results" on string', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 19:27:21 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 19:32:14 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 20:07:36 --> Too few arguments to function App\Controllers\Home::getCity(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getCity()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 20:12:40 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 2 expected
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 20:13:41 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 2 expected
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 20:14:14 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 20:14:14 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 20:15:48 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in C:\laragon\www\ongkir-dan-payment\vendor\codeigniter4\framework\system\CodeIgniter.php on line 889 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-11 20:21:01 --> Unknown named parameter $json
+in APPPATH\Controllers\Home.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getCity()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

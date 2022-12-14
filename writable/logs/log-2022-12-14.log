@@ -1,0 +1,13 @@
+CRITICAL - 2022-12-14 04:22:06 --> 28 : Failed to connect to api.rajaongkir.com port 80: Timed out
+in SYSTEMPATH\HTTP\CURLRequest.php on line 655.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(655): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('28', 'Failed to connect to api.rajaongkir.com port 80: Timed out')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(363): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'http://api.rajaongkir.com/starter/city?province=1')
+ 4 APPPATH\Helpers\RajaOngkir.php(26): CodeIgniter\HTTP\CURLRequest->request('GET', 'http://api.rajaongkir.com/starter/city', [...])
+ 5 APPPATH\Helpers\RajaOngkir.php(62): App\Helpers\RajaOngkir->get('city', [...], true)
+ 6 APPPATH\Controllers\Home.php(27): App\Helpers\RajaOngkir->getCity(null, '1', true)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getCity()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
