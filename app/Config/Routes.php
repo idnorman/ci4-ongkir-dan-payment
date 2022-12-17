@@ -38,6 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/city', 'Home::getCity', ['as' => 'getCity']);
 $routes->post('/cost', 'Home::getCost', ['as' => 'getCost']);
+$routes->post('/snap-pay', 'Home::snapPay', ['as' => 'snapPay']);
 $routes->get('/tes', 'Home::tes');
 
 /*

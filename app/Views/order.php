@@ -80,16 +80,26 @@
                             <input type="number" name="total" class="form-control form-control-sm total" id="total" disabled>
                         </div>
                         <div class="col-auto">
-                            <button class="btn btn-primary btn-sm mb-2 btn-count px-3" id="btn-count">Bayar</button>
+                            <button type="submit" class="btn btn-primary btn-sm mb-2 px-3 btn-snap" id="btn-snap">Snap</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <div class="border border-secondary rounded px-3 py-2 mb-2">
+                    <pre><div id="result-json">JSON result will appear here after payment:<br></div></pre>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src=" https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="<Set your ClientKey here>"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#select-origin-province').select2();
@@ -102,10 +112,9 @@
             $('#select-destination-province').change(() => {
                 setDestinationCity($('#select-destination-province').select2().val());
             });
-            // $('#btn-count').on("click", () => getCost());
             $('#courier').on("change", () => getCost());
             $('#courier-service').on("change", () => setTotalCost());
-
+            $('#btn-snap').on('click', () => snapPay());
         });
 
         async function setOriginCity(province) {
@@ -180,6 +189,40 @@
             let price = $('#price').val();
             let courierCost = $('#courier-service option:selected').data('value');
             $('#total').val(parseInt(price) + parseInt(courierCost));
+            console.log($('#total').val());
+        }
+
+        async function snapPay() {
+            let origin = $('#select-origin-city').select2().val();
+            let destination = $('#select-destination-city').select2().val();
+            let total = $('#total').val();
+            await axios.post('<?= base_url() . route_to('snapPay') ?>', {
+                    origin: origin,
+                    destination: destination,
+                    total: total
+                })
+                .then(function(response) {
+                    snap.pay(response.data, {
+                        // Optional
+                        onSuccess: function(result) {
+                            /* You may add your own js here, this is just example */
+                            document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                        },
+                        // Optional
+                        onPending: function(result) {
+                            /* You may add your own js here, this is just example */
+                            document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                        },
+                        // Optional
+                        onError: function(result) {
+                            /* You may add your own js here, this is just example */
+                            document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                        }
+                    });
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
         }
     </script>
 </body>
