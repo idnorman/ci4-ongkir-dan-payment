@@ -10,9 +10,9 @@ class Home extends BaseController
     public function __construct()
     {
         $this->rajaOngkir = new RajaOngkir();
-        \Midtrans\Config::$serverKey = 'SB-Mid-server-vfU0nOxkI1SO7PoLgmGn4ai3';
-        \Midtrans\Config::$clientKey = 'SB-Mid-client-9I93965jr4kaGb9J';
-        \Midtrans\Config::$is3ds = true;
+        \Midtrans\Config::$serverKey = env('midtrans.serverKey');
+        \Midtrans\Config::$clientKey = env('midtrans.clientKey');
+        \Midtrans\Config::$is3ds = false;
     }
 
     public function index()
@@ -48,32 +48,11 @@ class Home extends BaseController
         $tes = get_object_vars($tes);
         dd($tes['city_id']);
     }
-    public function snapPay()
+    public function snapPayment()
     {
-        // $originCity = $this->request->getVar('origin');
-        // $originCity = get_object_vars($this->rajaOngkir->getCity($originCity));
-        // $originCity = [
-        //     "city_id" => "17",
-        //     "city_name" => "Badung",
-        //     "postal_code" => "80351",
-        //     "type" => "Kabupaten",
-        //     "province" => "Bali",
-        //     "province_id" => "1"
-        // ];
-
         $destinationCity = $this->request->getVar('destination');
         $destinationCity = get_object_vars($this->rajaOngkir->getCity($destinationCity));
-        // $destinationCity = [
-        //     "city_id" => "27",
-        //     "city_name" => "Bangka",
-        //     "postal_code" => "33212",
-        //     "type" => "Kabupaten",
-        //     "province" => "Bangka Belitung",
-        //     "province_id" => "2"
-        // ];
-
         $total = (int) $this->request->getVar('total');
-        // $total = (int) "10000";
 
         $shipping_address = array(
             'first_name'    => "Nama",
@@ -98,5 +77,76 @@ class Home extends BaseController
         $snapToken = \Midtrans\Snap::getSnapToken($params);
 
         return $snapToken;
+    }
+    public function cardPayment()
+    {
+        $token_id = $this->request->getVar('token_id');
+        $destinationCity = $this->request->getVar('destination');
+        $destinationCity = get_object_vars($this->rajaOngkir->getCity($destinationCity));
+        $total = (int) $this->request->getVar('total');
+
+        $shipping_address = array(
+            'first_name'    => "Nama",
+            'last_name'     => "Penerima",
+            'city'          => $destinationCity['city_name'],
+            'postal_code'   => $destinationCity['postal_code']
+        );
+
+        $customer_details = array(
+            'first_name'    => "Nama",
+            'last_name'     => "Penerima",
+            'shipping_address' => $shipping_address
+        );
+
+        $params = array(
+            'transaction_details' => array(
+                'order_id' => rand(),
+                'gross_amount' => $total,
+            ),
+            'payment_type' => 'credit_card',
+            'credit_card'  => array(
+                'token_id'      => $token_id,
+                'authentication' => false,
+            ),
+            'customer_details' => $customer_details
+        );
+        $response = \Midtrans\CoreApi::charge($params);
+
+        return json_encode($response);
+    }
+
+    public function gopayQrisPayment()
+    {
+        $destinationCity = $this->request->getVar('destination');
+        $destinationCity = get_object_vars($this->rajaOngkir->getCity($destinationCity));
+        $total = (int) $this->request->getVar('total');
+
+        $shipping_address = array(
+            'first_name'    => "Nama",
+            'last_name'     => "Penerima",
+            'city'          => $destinationCity['city_name'],
+            'postal_code'   => $destinationCity['postal_code']
+        );
+
+        $customer_details = array(
+            'first_name'    => "Nama",
+            'last_name'     => "Penerima",
+            'shipping_address' => $shipping_address
+        );
+
+        $params = array(
+            'transaction_details' => array(
+                'order_id' => rand(),
+                'gross_amount' => $total,
+            ),
+            'payment_type' => 'gopay',
+            'gopay' => array(
+                'enable_callback' => false,
+            ),
+            'customer_details' => $customer_details
+        );
+
+        $response = \Midtrans\CoreApi::charge($params);
+        return json_encode($response);
     }
 }

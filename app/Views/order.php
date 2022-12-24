@@ -54,13 +54,15 @@
             <div class="col-5">
                 <div class="border border-secondary rounded px-3 py-2 mb-2">
                     <h5>Total</h5>
-                    <div class="form-group mb-2">
-                        <label for="price" class="form-label">Harga</label>
-                        <input type="number" name="price" class="price form-control form-control-sm" id="price" min=1 placeholder=10000 value="10000">
-                    </div>
-                    <div class="form-group mb-2">
-                        <label for="weight" class="form-label">Berat (dalam gram)</label>
-                        <input type="number" name="weight" class="weight form-control form-control-sm" id="weight" min=1 placeholder=1000 value="1000">
+                    <div class="row mb-2">
+                        <div class="col-6">
+                            <label for="price" class="form-label">Harga</label>
+                            <input type="number" name="price" class="price form-control form-control-sm" id="price" min=1 placeholder=10000 value="10000">
+                        </div>
+                        <div class="col-6">
+                            <label for="weight" class="form-label">Berat (dalam gram)</label>
+                            <input type="number" name="weight" class="weight form-control form-control-sm" id="weight" min=1 placeholder=1000 value="1000">
+                        </div>
                     </div>
                     <div class="form-group mb-2">
                         <label for="courier" class="form-label">Pilih Kurir</label>
@@ -82,6 +84,12 @@
                         <div class="col-auto">
                             <button type="submit" class="btn btn-primary btn-sm mb-2 px-3 btn-snap" id="btn-snap">Snap</button>
                         </div>
+                        <hr class="border border-primary opacity-25 mb-2">
+                        <h6>CoreAPI</h6>
+                        <div class="col-auto">
+                            <button class="btn btn-primary btn-sm mb-2 px-3 btn-card-modal" id="btn-card-modal" data-bs-toggle="modal" data-bs-target="#cardModal">Card</button>
+                            <button class="btn btn-primary btn-sm mb-2 px-3 btn-gopay-qris-modal" id="btn-gopay-qris-modal">Gopay/QRIS</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,12 +102,79 @@
             </div>
         </div>
     </div>
+
+    <!-- Card (CoreAPI) Payment Modal -->
+    <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="cardModalLabel">Card (CoreAPI)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success d-none" id="card-pay-success" role="alert">
+                        Pembayaran Berhasil dilakukan
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="card-number" class="form-label">Card Number</label>
+                        <input type="number" name="card-number" class="card-number form-control form-control-sm" id="card-number" min=1 placeholder=4811111111111114 value="4811111111111114">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="card-exp-month" class="form-label">EXP (Month)</label>
+                        <input type="number" name="card-exp-month" class="card-exp-month form-control form-control-sm" id="card-exp-month" min=1 placeholder=02 value="02">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="card-exp-year" class="form-label">EXP (Year)</label>
+                        <input type="number" name="card-exp-year" class="card-exp-year form-control form-control-sm" id="card-exp-year" min=1 placeholder=2025 value="2025">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="card-cvv" class="form-label">CVV</label>
+                        <input type="number" name="card-cvv" class="card-cvv form-control form-control-sm" id="card-cvv" min=1 placeholder=123 value="123">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary btn-card-pay" type="button" id="btn-card-pay">
+                        Bayar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Card (CoreAPI) Payment Modal -->
+
+    <!-- GoPay/QRIS (CoreAPI) Payment Modal -->
+    <div class="modal fade" id="gopayQrisModal" tabindex="-1" aria-labelledby="gopayQrisModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="gopayQrisModalLabel">GoPay/QRIS (CoreAPI)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success d-none" id="gopay-qris-pay-success" role="alert">
+                        Pembayaran Berhasil dilakukan
+                    </div>
+                    <div class="col text-center" id="gopay-qris-pay-spinner-container">
+                    </div>
+                    <div class="col text-center" id="gopay-qris-pay-qr-container">
+                        <img src="" class="d-none" id="gopay-qris-pay-qr">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of GoPay/QRIS (CoreAPI) Payment Modal -->
     <script src=" https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="<Set your ClientKey here>"></script>
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="<?= env('midtrans.clientKey') ?>"></script>
+    <script id="midtrans-script" type="text/javascript" src="https://api.midtrans.com/v2/assets/js/midtrans-new-3ds.min.js" data-environment="sandbox" data-client-key="<?= env('midtrans.clientKey') ?>"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#select-origin-province').select2();
@@ -114,7 +189,9 @@
             });
             $('#courier').on("change", () => getCost());
             $('#courier-service').on("change", () => setTotalCost());
-            $('#btn-snap').on('click', () => snapPay());
+            $('#btn-snap').on('click', () => snapPayment());
+            $('#btn-card-pay').on('click', () => cardPayment());
+            $('#btn-gopay-qris-modal').on('click', () => gopayQrisPayment());
         });
 
         async function setOriginCity(province) {
@@ -189,14 +266,13 @@
             let price = $('#price').val();
             let courierCost = $('#courier-service option:selected').data('value');
             $('#total').val(parseInt(price) + parseInt(courierCost));
-            console.log($('#total').val());
         }
 
-        async function snapPay() {
+        async function snapPayment() {
             let origin = $('#select-origin-city').select2().val();
             let destination = $('#select-destination-city').select2().val();
             let total = $('#total').val();
-            await axios.post('<?= base_url() . route_to('snapPay') ?>', {
+            await axios.post('<?= base_url() . route_to('snapPayment') ?>', {
                     origin: origin,
                     destination: destination,
                     total: total
@@ -219,6 +295,85 @@
                             document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
                         }
                     });
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+        }
+
+        function cardPayment() {
+            let spinner = '<span class="spinner-border spinner-border-sm" role="status" id="card-pay-spinner" aria-hidden="true"></span>';
+
+            $("#btn-card-pay").text('Getting Token ').attr('disabled', true).append(spinner);
+
+            let cardData = {
+                "card_number": $("#card-number").val(),
+                "card_exp_month": $("#card-exp-month").val(),
+                "card_exp_year": $("#card-exp-year").val(),
+                "card_cvv": $("#card-cvv").val()
+            };
+
+            var options = {
+                onSuccess: function(response) {
+                    var token_id = response.token_id;
+                    cardPaymentPost(token_id)
+                },
+                onFailure: function(response) {
+                    console.log('Fail to get card token_id, response:', response);
+                }
+            };
+
+            MidtransNew3ds.getCardToken(cardData, options);
+        }
+        async function cardPaymentPost(token_id) {
+            let spinner = '<span class="spinner-border spinner-border-sm" role="status" id="card-pay-spinner" aria-hidden="true"></span>';
+
+            let origin = $('#select-origin-city').select2().val();
+            let destination = $('#select-destination-city').select2().val();
+            let total = $('#total').val();
+
+            $("#btn-card-pay").text('Making Payment ').attr('disabled', true).append(spinner);
+            await axios.post('<?= base_url() . route_to('cardPayment') ?>', {
+                    "token_id": token_id,
+                    "origin": origin,
+                    "destination": destination,
+                    "total": total
+                })
+                .then(function(response) {
+                    console.log(response);
+                    $('#card-pay-success').removeClass('d-none');
+                    document.getElementById('result-json').innerHTML += JSON.stringify(response.data, null, 2);
+                    setTimeout(function() {
+                        $('#cardModal').modal('hide');
+                        $('#card-pay-spinner').remove();
+                        $("#btn-card-pay").text('Bayar').attr('disabled', false);
+                        $('#card-pay-success').addClass('d-none');
+                    }, 3000);
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+        }
+        async function gopayQrisPayment() {
+            $('#gopayQrisModal').modal('show');
+            let spinner = '<div class="spinner-grow text-primary" id="gopay-qris-pay-spinner" role="status"></div>';
+
+            let origin = $('#select-origin-city').select2().val();
+            let destination = $('#select-destination-city').select2().val();
+            let total = $('#total').val();
+
+            $("#gopay-qris-pay-spinner-container").append(spinner);
+            await axios.post('<?= base_url() . route_to('gopayQrisPayment') ?>', {
+                    "origin": origin,
+                    "destination": destination,
+                    "total": total
+                })
+                .then(function(response) {
+                    let image = response.data.actions[0].url;
+                    // console.log(response.data.actions[0].url);
+                    $('#gopay-qris-pay-spinner').remove();
+                    $('#gopay-qris-pay-qr').attr('src', image).removeClass('d-none');
+                    document.getElementById('result-json').innerHTML += JSON.stringify(response.data, null, 2);
                 })
                 .catch(function(error) {
                     console.log(error);
