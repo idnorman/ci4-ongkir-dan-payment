@@ -145,3 +145,12 @@
 
 rajaongkir.baseURI = 'https://api.rajaongkir.com/starter/'
 rajaongkir.key = 'your-api-key'
+
+midtrans.serverKey = 'your-server-key'
+midtrans.clientKey = 'your-client-key'
+midtrans.base64ServerKey = 'your-base64-server-key'
+
+pusher.app_id = "your-app-id"
+pusher.key = "your-key"
+pusher.secret = "your-secret"
+pusher.cluster = "your-cluster"

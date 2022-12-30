@@ -89,6 +89,7 @@
                         <div class="col-auto">
                             <button class="btn btn-primary btn-sm mb-2 px-3 btn-card-modal" id="btn-card-modal" data-bs-toggle="modal" data-bs-target="#cardModal">Card</button>
                             <button class="btn btn-primary btn-sm mb-2 px-3 btn-gopay-qris-modal" id="btn-gopay-qris-modal">Gopay/QRIS</button>
+                            <button class="btn btn-primary btn-sm mb-2 px-3 btn-bca-va-modal" id="btn-bca-va-modal">BCA VA</button>
                         </div>
                     </div>
                 </div>
@@ -168,6 +169,35 @@
         </div>
     </div>
     <!-- End of GoPay/QRIS (CoreAPI) Payment Modal -->
+
+    <!-- BCA VA (CoreAPI) Payment Modal -->
+    <div class="modal fade" id="bcaVaModal" tabindex="-1" aria-labelledby="bcaVaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="bcaVaModalLabel">BCA VA (CoreAPI)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success d-none" id="bca-va-pay-success" role="alert">
+                        Pembayaran Berhasil dilakukan
+                    </div>
+                    <div class="col text-center" id="bca-va-pay-spinner-container">
+                    </div>
+                    <div class="col text-center" id="bca-va-pay-number-container">
+                        <div class="input-group mb-3 d-none" id="bca-va-pay-number-group">
+                            <span class="input-group-text" id="basic-addon1">BCA</span>
+                            <input type="text" class="form-control" id="bca-va-pay-number" placeholder="" value="" aria-label="Username" aria-describedby="basic-addon1" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of BCA VA (CoreAPI) Payment Modal -->
     <script src=" https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -175,6 +205,7 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="<?= env('midtrans.clientKey') ?>"></script>
     <script id="midtrans-script" type="text/javascript" src="https://api.midtrans.com/v2/assets/js/midtrans-new-3ds.min.js" data-environment="sandbox" data-client-key="<?= env('midtrans.clientKey') ?>"></script>
+    <script src="https://js.pusher.com/7.2/pusher.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#select-origin-province').select2();
@@ -192,6 +223,7 @@
             $('#btn-snap').on('click', () => snapPayment());
             $('#btn-card-pay').on('click', () => cardPayment());
             $('#btn-gopay-qris-modal').on('click', () => gopayQrisPayment());
+            $('#btn-bca-va-modal').on('click', () => bcaVaPayment());
         });
 
         async function setOriginCity(province) {
@@ -379,7 +411,55 @@
                     console.log(error);
                 });
         }
+
+
+        // Enable pusher logging - don't include this in production
+        Pusher.logToConsole = true;
+
+        var pusher = new Pusher('8a8025c6f9e9e3742733', {
+            cluster: 'ap1'
+        });
+        pusher.unsubscribe('fixit');
+        var channel;
+
+
+        async function bcaVaPayment() {
+            $('#bcaVaModal').modal('show');
+            $('#bca-va-pay-number-group').addClass('d-none');
+            let spinner = '<div class="spinner-grow text-primary" id="bca-va-pay-spinner" role="status"></div>';
+
+            let origin = $('#select-origin-city').select2().val();
+            let destination = $('#select-destination-city').select2().val();
+            let total = $('#total').val();
+
+            $("#bca-va-pay-spinner-container").append(spinner);
+            await axios.post('<?= base_url() . route_to('bcaVaPayment') ?>', {
+                    "origin": origin,
+                    "destination": destination,
+                    "total": total
+                })
+                .then(function(response) {
+                    // console.log(response);
+                    let event = 'bcava-' + response.data.order_id;
+                    console.log(event);
+                    channel = pusher.subscribe('fixit');
+                    channel.bind(event, function(data) {
+                        // console.log('event test');
+                        // console.log(data);
+                        // alert(JSON.stringify(data));
+                        $('#bca-va-pay-success').removeClass('d-none');
+                    });
+                    $('#bca-va-pay-spinner').remove();
+                    $('#bca-va-pay-number-group').removeClass('d-none');
+                    $('#bca-va-pay-number').val(response.data.va_numbers[0].va_number);
+                    document.getElementById('result-json').innerHTML += JSON.stringify(response.data, null, 2);
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+        }
     </script>
+
 </body>
 
 </html>

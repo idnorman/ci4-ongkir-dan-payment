@@ -41,6 +41,8 @@ $routes->post('/cost', 'Home::getCost', ['as' => 'getCost']);
 $routes->post('/snap-payment', 'Home::snapPayment', ['as' => 'snapPayment']);
 $routes->post('/card-payment', 'Home::cardPayment', ['as' => 'cardPayment']);
 $routes->post('/gopay-qris-payment', 'Home::gopayQrisPayment', ['as' => 'gopayQrisPayment']);
+$routes->post('/bca-va-payment', 'Home::bcaVaPayment', ['as' => 'bcaVaPayment']);
+$routes->post('/tes-notification', 'Home::tesNotification', ['as' => 'tesNotification']);
 $routes->get('/tes', 'Home::tes');
 
 /*
