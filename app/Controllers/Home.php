@@ -7,6 +7,7 @@ use Pusher\Pusher;
 
 class Home extends BaseController
 {
+    private $rajaOngkir;
 
     public function __construct()
     {
